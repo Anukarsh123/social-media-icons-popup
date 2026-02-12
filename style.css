@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* Wrapper */
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+/* Icons */
+.wrapper .icon {
+    position: relative;
+    margin: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.wrapper .icon a {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/* Tooltip */
+.wrapper .tooltip {
+    position: absolute;
+    top: -40px;
+    background: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.wrapper .icon:hover .tooltip {
+    opacity: 1;
+}
+
+/* Glow Animation */
+.wrapper .icon:hover {
+    transform: translateY(-5px);
+}
+
+/* Facebook */
+.facebook:hover {
+    background: #1877F2;
+    box-shadow: 0 0 20px #1877F2;
+}
+
+/* Twitter */
+.twitter:hover {
+    background: #000;
+    box-shadow: 0 0 20px #ffffff;
+}
+
+/* Instagram */
+.instagram:hover {
+    background: #E4405F;
+    box-shadow: 0 0 20px #E4405F;
+}
+
+/* GitHub */
+.github:hover {
+    background: #333;
+    box-shadow: 0 0 20px #ffffff;
+}
+
+/* YouTube */
+.youtube:hover {
+    background: #FF0000;
+    box-shadow: 0 0 20px #FF0000;
+}
+
+/* 📱 Responsive */
+@media (max-width: 500px) {
+    .wrapper .icon {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    .wrapper .icon a {
+        font-size: 18px;
+    }
+}
